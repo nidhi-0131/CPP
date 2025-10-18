@@ -106,7 +106,6 @@ int main()
 }
 
 //15-10-2025: 7: WAP in C++ to print the statement by using an example of "Traffic SIgnal"//
-//error//
 #include <iostream>
 using namespace std;
 int main()
