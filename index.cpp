@@ -111,15 +111,26 @@ int main()
 using namespace std;
 int main()
 {
-    string colour, red;
-    if (colour==red)
+    string colour;
+    cout << "Enter the traffic light colour: ";
+    cin>>colour;
+    if (colour=="red")
     {
-        cout<<"traffic is stop";
+        cout<<"Traffic is STOP🚦";
     }
-    else 
+    else if (colour=="yellow")
     {
-        cout<<"traffic is moving";
+        cout<<"Traffic is READY TO MOVE ⚠️";
     }
+    else if (colour=="green")
+    {
+        cout<<"Traffic is MOVING ✅";
+    }
+    else
+    {
+        cout<<"Invalid colour!";
+    }
+    return 0;
 }
 
 //16-10-2025: 8//
