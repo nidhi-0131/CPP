@@ -216,3 +216,132 @@ int main()
 	}
 	return 0;
 }
+
+//31-10-2025: 12//
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    for (i=1; i<=5; i++)
+    {
+        int j;
+        for (j=1; j<=5; j++)
+        {
+            cout << i << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+//31-10-2025: 13//
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    for (i=1; i<=5; i++)
+    {
+        int j;
+        for (j=1; j<=5; j++)
+        {
+            cout << i << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+//31-10-2025: 14//
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    for (i=1; i<=5; i++)
+    {
+        cout << "* * * * * " << endl;
+    }
+    cout << endl;
+    return 0;
+}
+
+//31-10-2025: 15//
+#include <iostream>
+using namespace std;
+int main()
+{
+    for (int i=1; i<=5; i++) 
+    {
+        for (int j=1; j<=i; j++) 
+        {
+            cout << "* ";
+        }
+    cout << endl;
+    }
+}
+
+//31-10-2025: 16//
+#include <iostream>
+using namespace std;
+int main()
+{
+    for (int i=1; i<=5; i++) 
+    {
+        for (int j=1; j<=i; j++) 
+        {
+            cout << j << " ";
+        }
+    cout << endl;
+    }
+}
+
+//31-10-2025: 17//
+#include <iostream>
+using namespace std;
+int main()
+{
+    for (int i=1; i<=5; i++) 
+    {
+        for (int j=1; j<=i; j++) 
+        {
+            cout << i << " ";
+        }
+    cout << endl;
+    }
+}
+
+//31-10-2025: 18//
+#include <iostream>
+using namespace std;
+int main()
+{
+	int date;
+	cout << "The boy steps out of his house on these dates each month: ";
+	for (date=1; date<=30; date++)
+	{
+		if (date%2!=0)
+		{
+			continue;
+		}
+		cout << date << ", ";
+	}
+}
+
+//31-10-2025: 19//
+#include <iostream>
+using namespace std;
+int main()
+{
+	int date;
+	cout << "The boy stays in his house on these dates each month: ";
+	for (date=1; date<=30; date++)
+	{
+		if (date%2==0)
+		{
+			continue;
+		}
+		cout << date << ", ";
+	}
+}
