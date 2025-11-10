@@ -345,3 +345,104 @@ int main()
 		cout << date << ", ";
 	}
 }
+
+//07-11-2025: 20//
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    for (i=1; i<=4; i++)
+    {
+        int j;
+        for (j=1; j<=7; j++)
+        {
+            if(i+j==5 || j-i==3 || i==4)
+                cout << "* ";
+            else
+                cout << " ";
+        }
+        cout << " " << endl;
+    }
+    return 0;
+}
+
+//07-11-2025: 21//
+#include <iostream>
+using namespace std;
+int main()
+{
+    int i;
+    for (i=1; i<=5; i++)
+    {
+        int j;
+        for (j=1; j<=5; j++)
+        {
+            if (i==5 || i==1 || j==1 || j==5)
+                cout << "* ";
+            else 
+                cout << "  ";
+        }
+        cout << " " << endl;
+    }
+    return 0;
+}
+
+//10-11-2025: 22//
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int a[5] = {10, 20, 30, 40, 50};
+    cout << "Entering the elements of array: " << endl;
+    for (int i=0; i<=4; i++)
+    {
+        cout << a[i] << " " << endl;
+    }
+    return 0;
+}
+
+//10-11-2025: 23//
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int a[5];
+    cout << "Enter the elements of array: " << endl;
+    for (int i=0; i<=4; i++)
+    {
+        cin >> a[i];
+    }
+    cout << endl;
+}
+
+//10-11-2025: 24//
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int a[5] = {10, 20, 30, 40, 50};
+    cout << "Entering the elements of array: " << endl;
+    for (int i=4; i>=0; i--)
+    {
+        cout << a[i] << " " << endl;
+    }
+    return 0;
+}
+
+//10-11-2025: 25//
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int a[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+    for (int i=0; i<=2; i++)
+    {
+        for (int j=0; j<=2; j++)
+        {
+            cout << a[i][j] << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
