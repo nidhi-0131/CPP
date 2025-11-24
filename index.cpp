@@ -504,3 +504,15 @@ main()
 {
     say();
 }
+
+//24-11-2025: 29: functions//
+#include <bits/stdc++.h>
+using namespace std;
+void say(string msg)
+{
+    cout << "Hi! " << msg << endl;
+}
+int main()
+{
+    say("How are you?");
+}
