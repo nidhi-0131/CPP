@@ -492,3 +492,15 @@ int main()
     }
     return 0;
 }
+
+//24-11-2025: 28: functions//
+#include <bits/stdc++.h>
+using namespace std;
+void say()
+{
+    cout << "Hello, Hi" << endl;
+}
+main()
+{
+    say();
+}
