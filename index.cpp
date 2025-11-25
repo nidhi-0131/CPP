@@ -516,3 +516,38 @@ int main()
 {
     say("How are you?");
 }
+
+//24-11-2025: 30: functions//
+#include <bits/stdc++.h>
+using namespace std;
+void displayNum(int n1, float n2) 
+{
+    cout << "The int number is " << n1 << endl;
+    cout << "The float number is " << n2 << endl;
+}
+int main()
+{
+    int num1 = 5;
+    float num2 = 5.5;
+    displayNum(num1, num2);
+    return 0;
+}
+
+//24-11-2025: 31: functions//
+#include <bits/stdc++.h>
+using namespace std;
+void hello() 
+{
+    cout << "Geeks for Geeks" << endl;
+}
+int square(int x)
+{
+    return x*x;
+}
+int main()
+{
+    hello();
+    int result=square(5);
+    cout << "Square of 5 is " << result << endl;
+    return 0;
+}
