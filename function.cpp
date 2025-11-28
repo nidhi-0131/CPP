@@ -1,3 +1,14 @@
+/*
+User-defined functions basically have three aspects:
+    function declaration: 
+        return_type function_name (parameters_list)
+    function definition:
+        add(int a, int b) {
+            return( a + b );
+        }
+    function calling:
+        add(5, 10)
+*/
 #include <bits/stdc++.h>
 using namespace std;
 void displayNum(int n1, float n2) 
