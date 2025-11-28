@@ -551,3 +551,18 @@ int main()
     cout << "Square of 5 is " << result << endl;
     return 0;
 }
+
+//26-11-2025: 32: functions... sum of two numbers//
+#include <bits/stdc++.h>
+using namespace std;
+int add(int a, int b)
+{
+    return (a+b);
+}
+int main()
+{
+    int sum;
+    sum=add(2345678, 8765432);
+    cout << "Sum of the two numbers: " << sum << endl;
+    return 0;
+}
