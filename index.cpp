@@ -566,3 +566,55 @@ int main()
     cout << "Sum of the two numbers: " << sum << endl;
     return 0;
 }
+
+//03-12-2025: 33//
+#include <bits/stdc++.h>
+using namespace std;
+void display(int x)
+{
+    return;
+}
+main ()
+{
+    int a=5;
+    cout << "a = " << a << endl;
+    display(a);
+}
+
+//03-12-2025: 34: print the increment number//
+#include <bits/stdc++.h>
+using namespace std;
+void increment(int &i)
+{
+    i++;
+    return;
+}
+int main ()
+{
+    int a=5;
+    cout << "Before incrrement, a = " << a << endl;
+    increment(a);
+    cout << "After increment, a = " << a << endl;
+    return 0;
+}
+
+//03-12-2025: 35: swap two numbers//
+#include <bits/stdc++.h>
+using namespace std;
+void swap(int &i, int &j)
+{
+    int temp;
+    temp=i;
+    i=j;
+    j=temp;
+    return;
+}
+int main ()
+{
+    int a=8;
+    int b=9;
+    cout << "Before swapping: " << a << ", " << b << endl;
+    swap(a, b);
+    cout << "After swapping: " << a << ", " << b << endl;
+    return 0;
+}
