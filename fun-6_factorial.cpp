@@ -14,3 +14,4 @@ int main ()
     cout << "The factorial of " << n << " is: " << fact(n) << endl;
     return 0;
 }
+//? not sure if this is right TT
