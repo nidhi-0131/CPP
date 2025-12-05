@@ -636,3 +636,133 @@ int main ()
     cout << "The factorial of " << n << " is: " << fact(n) << endl;
     return 0;
 }
+
+//04-12-2025: 37: string//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	char hello[6]={'h', 'e', 'l', 'l', 'o'};
+	cout << "welcome message: ";
+	cout << hello;
+	return 0;
+}
+
+//04-12-2025: 38: string//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	char str[100];
+	cout << "enter a string: ";
+	cin.getline(str, 100);
+	cout << "you entered: ";
+	cout << str;
+	return 0;
+}
+
+//04-12-2025: 39: string//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	char f_name[20];
+	char l_name[20];
+	char full_name[50];
+	cout << "Enter your first name: ";
+	cin >> f_name;
+	cout << "Enter your last name: ";
+	cin >> l_name;
+	cout << "Hi " << f_name << "! Your first name has " << strlen(f_name) << " characters, and your last name has " << strlen(l_name) << " characters." << endl;
+	strcpy(full_name, f_name);
+	strcat(full_name, " ");
+	strcat(full_name, l_name);
+	cout << "Your full name is: " << full_name << endl;
+	if ((strcmp(f_name, l_name))==0)
+	    cout << "Both strings are equal." << endl;
+	else
+	    cout << "Strings are not equal." << endl;
+	return 0;
+}
+
+//05-12-2025: 40: string//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	char myname[20];
+	cout << "Enter your full name: ";
+	// cin >> myname; // if more than one string is input, we use cin.getline(string_name, size); instead of cin >> string_name;
+    // so here, cin.getline(myname, 20);
+    cin.getline(myname, 20);
+	cout << endl;
+	cout << "Full name: " << myname << endl;
+	cout << "Number of characters in your name: " << strlen(myname) << endl;
+	return 0;
+}
+
+//05-12-2025: 41: string//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    char str[20];
+    cout << "Enter the string: ";
+    cin.getline(str, 20);
+    cout << endl;
+    cout << "String length: " << strlen(str) << endl;
+    return 0;
+}
+
+//05-12-2025: 42: string comparison//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    char s1[5];
+    char s2[6];
+    cout << "Enter the first string: ";
+    cin.getline(s1, 5);
+    cout << endl;
+    cout << "Enter the second string: ";
+    cin.getline(s2, 6);
+    cout << endl;
+    if ((strcmp(s1, s2))==0)
+        cout << "Both strings are equal." << endl;
+    else
+        cout << "Strings are not equal." << endl;
+    return 0;
+}
+
+//05-12-2025: 43: string swapping//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    char s1[20];
+    char s2[20];
+    cout << "Enter the first string: ";
+    cin.getline(s1, 20);
+    cout << endl;
+    cout << "Enter the second string: ";
+    cin.getline(s2, 20);
+    cout << endl;
+    int len=min(strlen(s1), strlen(s2));
+    for (int i=0; i<=len; i++) {
+        if (i%2!=0) {
+            swap(s1[i], s2[i]);
+        }
+    }
+    cout << "Swapping the strings, \n";
+    cout << "First string: " << s1 << endl;
+    cout << "Second string: " << s2 << endl;
+}
+
+//05-12-2025: 44: string concatination//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    char s1[50];
+    char s2[50];
+    cout << "Enter the first string: ";
+    cin.getline(s1, 50);
+    cout << endl;
+    cout << "Enter the second string: ";
+    cin.getline(s2, 50);
+    cout << endl;
+    cout << "Concatination: " << strcat(s1, s2) << endl;
+    return 0;
+}
