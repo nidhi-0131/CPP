@@ -766,3 +766,136 @@ int main() {
     cout << "Concatination: " << strcat(s1, s2) << endl;
     return 0;
 }
+
+//12-12-2025: 45: string//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	string s="Hello";
+	s.insert(s.size(), "World");
+	cout << s;
+	return 0;
+}
+
+//12-12-2025: 46: string//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	string s="Hello";
+	s.insert(s.begin() + 2, 'c');
+	cout << s;
+	return 0;
+}
+
+//12-12-2025: 47: string//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	string str1="GeeksGeeks", str2="for";
+	str1.insert(5, str2);
+	cout << str1;
+	return 0;
+}
+
+//12-12-2025: 48: string//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	string str1="GeeksGeeks", str2="for";
+	str1.erase(5, 3);
+	cout << str1;
+	return 0;
+}
+
+//12-12-2025: 49: string//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	string str1="Hello";
+	cout << str1.substr(3, 2);
+	return 0;
+}
+
+//15-12-2025: 50: string//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	string s, p;
+	cin>>s; cin.ignore(); getline(cin, p);
+	//or getline(cin, p); cin >> s;
+	cout << s << endl << p;
+}
+
+//15-12-2025: 51: finding ascii value within a range n and m using string of length k//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int k, n, m;
+	cin >> k >> n >> m;
+	string s;
+	cin >> s;
+	// for ASCII value, int(char);
+	int count=0;
+	for (int i=0; i<k; i++) {
+	    int x=int(s[i]);
+	    if (x>=n && x<=m) {
+	        count++;
+	    }
+	}
+	cout << count;
+	return 0;
+}
+
+//15-12-2025: 52: string//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int n, k;
+	cin >> n >> k;
+	string s;
+	cin >> s;
+	cout << s.substr(k, n - 2*k);
+	return 0;
+}
+
+//15-12-2025: 53: all alphabets in lowercase, leaving digits as it is, moving special characters at the end//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+	int n;
+	cin >> n;
+	string s;
+	cin >> s;
+	string r="", sc="";
+	// using isalpha(char); to check whether alphabet. using isdigit(char); to check whether digit. toupper(char); and tolower(char); for converting from uppercase to lowercase and vice-versa.
+	for (int i=0; i<n; i++) {
+	    if (isalpha(s[i])) {
+	        s[i]=toupper(s[i]);
+	        r = r + s[i];
+	    }
+	    else if (isdigit(s[i])) {
+	        r = r + s[i];
+	    }
+	    else {
+	        sc = sc + s[i];
+	    }
+	}
+	string result = r + sc;
+	cout << result;
+	return 0;
+}
+
+//17-12-2025: 54: append function to add//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string str1, str2;
+    cin >> str1 >> str2;
+    // append string 2 at the end of string 1: str1.append(str2); //
+    cout << str1.append(str2) << endl;
+    // append some characters of string 2 in string 1: str1.append(str2, position, characters); // 
+    cout << str1.append(str2, 3, 5) << endl;
+    // append some other character at the end of string 1 multiple times: str.append(times, char); //
+    cout << str1.append(2, '!');
+    return 0;
+}
