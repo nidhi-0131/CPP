@@ -899,3 +899,40 @@ int main() {
     cout << str1.append(2, '!');
     return 0;
 }
+
+//17-12-2025: 55: append function to add//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string str1, str2;
+    cin >> str1 >> str2;
+    // append a string in a given range //
+    // begin(): iterator pointing to the first element of a string for where we have to append. end(): iterator pointing to after the last element of a string for where we have to append //
+    cout << str1.append(str2.begin() + 3, str2.end()) << endl;
+    return 0;
+}
+
+//22-12-2025: 56: find string 2 in string 1//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string str1, str2;
+    cin >> str1 >> str2;
+    cout << str1.find(str2);
+    return 0;
+}
+
+//22-12-2025: 57//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string str1, str2;
+    cin >> str1 >> str2;
+    cout << str1.find(str2) << endl;
+    char c = 'l';
+    int res = -1;
+    while ((res = str1.find(c, res + 1)) != string::npos) {
+        cout << res << " ";
+    }
+    return 0;
+}
