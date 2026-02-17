@@ -912,27 +912,97 @@ int main() {
     return 0;
 }
 
-//22-12-2025: 56: find string 2 in string 1//
+//22-12-2025: 56//
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
     string str1, str2;
     cin >> str1 >> str2;
-    cout << str1.find(str2);
-    return 0;
-}
-
-//22-12-2025: 57//
-#include <bits/stdc++.h>
-using namespace std;
-int main() {
-    string str1, str2;
-    cin >> str1 >> str2;
+    // find in string
     cout << str1.find(str2) << endl;
+    // find characters
     char c = 'l';
     int res = -1;
     while ((res = str1.find(c, res + 1)) != string::npos) {
         cout << res << " ";
+    }
+    cout << endl;
+    // compare two strings: this syntax or simply if(str1 == str2) {}
+    if (str1.compare(str2) == 0) {
+        cout << "match\n";
+    } else {
+        cout << "not a match\n";
+    }
+    return 0;
+}
+
+//22-12-2025: 56//
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string str1, str2;
+    cin >> str1 >> str2;
+    // compare two strings: this syntax or simply if(str1 == str2) {}
+    if (str1.compare(str2) == 0) {
+        cout << "match\n";
+    } else {
+        cout << "not a match\n";
+        // syntax: if ((str1.compare(starting indexing, character, str2)) == 0)
+        if ((str1.compare(0, 5, str2)) == 0) {
+            cout << "match\n";
+        } else {
+            cout << "not a match\n";
+        }
+    }
+    return 0;
+}
+
+//24-12-2025: 57: 2*2 matrix with determinent//
+#include <bits/stdc++.h>
+using namespace std;
+int main ()
+{
+    int M[2][2];
+    int det, i, j;
+    cout << "Enter the elements of matrix: " << endl;
+    for (i=0; i<2; i++) {
+        for (j=0; j<2; j++) {
+            cin >> M[i][j];
+        }
+        cout << "\n";
+    }
+    det = (M[0][0] * M[1][1]) - (M[0][1] * M[1][0]);
+    cout << "Matrix is:\n";
+    for (i=0; i<2; i++) {
+        for (j=0; j<2; j++) {
+            cout << M[i][j] << " ";
+        }
+        cout << "\n";
+    }
+    cout << "Determinent of matrix is:" << det << "\n";
+    return 0;
+}
+
+//24-12-2025: 58: diagonal matrix//
+#include <bits/stdc++.h>
+using namespace std;
+int main () {
+    int matrix[3][3];
+    int i, j;
+    for (i=0; i<3; i++) {
+        for (j=0; j<3; j++) {
+            cin >> matrix[i][j];
+        }
+    }
+    for (i=0; i<3; i++) {
+        for (j=0; j<3; j++) {
+             if (i == j) {
+                cout << matrix[i][j] << " ";
+            } else {
+                cout << "  ";
+            }
+        }
+        cout << "\n";
     }
     return 0;
 }
